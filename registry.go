@@ -34,11 +34,11 @@ func RegistryProblemDetails(path string) []ProblemInfo {
 	return details.List()
 }
 
-func ProblemsList() []ProblemInfo {
+func List() []ProblemInfo {
 	return problems.List()
 }
 
-func ProblemsListDetails(path string) []ProblemInfo {
+func ListDetails(path string) []ProblemInfo {
 	details, ok := problemsDetails[path]
 	if !ok || details == nil {
 		return nil
